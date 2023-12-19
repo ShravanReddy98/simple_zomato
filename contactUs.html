@@ -4,44 +4,80 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>zomato</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,0"
+    />
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div id="head">
-      <div id="nav">
-        &emsp;&emsp;<span align="left">
-          <font size="7"
-            ><b>
-              <span>zomato</span>
-            </b></font
-          >
-        </span>
+    <header>
+      <div class="d-f jc-sb ai-c">
+        <span class="fs-45 ff-a font-w-9 m-0">zomato</span>
+        <div class="d-f jc-sb w-50 ai-c h-1 boxshadow-5 br-2 p-1">
+          <span class="material-symbols-outlined c-pink m-l-1">
+            location_on
+          </span>
+          <input
+            class="m-l-1 border-0 h-1 w-2x fs-l ff-c"
+            type="search"
+            placeholder="  Search for restaurants ,cuisine or a dish"
+          />
+          <button class="c-grey m-r-1 bg-0 border-0 m-0">
+            <span class="material-symbols-outlined"> search </span>
+          </button>
+        </div>
+        <div class="d-f jc-sb ai-c">
+          <span class="material-symbols-outlined c-skyblue">
+            account_circle
+          </span>
+          <span class="fs-22 ff-c">Shravan</span>
+        </div>
       </div>
-    </div>
-    <br />
-    <div>
-      <img
-        src="https://b.zmtcdn.com/webFrontend/8015dbe54fd3659cc0366c1cc77f664c1601890512.jpeg?output-format=webp"
-        alt="some bisket image"
-        width="1510rem"
-        height="380rem"
-      />
-      <h1>We would love to hear from you!</h1>
-    </div>
-    <br />
-    <form action="./index.html">
-      <h3>How can we help you?</h3>
-      <input type="text" placeholder="Name" required /><br /><br />
-      <input type="tel" placeholder="Mobile" required /><br /><br />
-      <textarea
-        type="text"
-        cols="147"
-        rows="10"
-        placeholder="Type text"
-        required
-      ></textarea
-      ><br /><br />
-      <input type="submit" value="Submit feedback" />
-    </form>
-    <br /><br />
+    </header>
+    <main class="contact-head">
+      <head class="">
+        <img
+          class="w-1x h-8"
+          src="https://b.zmtcdn.com/webFrontend/8015dbe54fd3659cc0366c1cc77f664c1601890512.jpeg?output-format=webp"
+          alt=""
+        />
+        <div class="thought d-ib">We would love to hear from you!</div>
+      </head>
+      <div class="d-f jc-se">
+        <div>
+          <form class="main d-ib w-1p5x">
+            <input
+              type="text"
+              placeholder="I need help with my Zomato online order."
+            />
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email Address" />
+            <input type="tel" placeholder="Mobile Number" />
+            <textarea
+              name="Description"
+              id="desc"
+              cols="30"
+              rows="10"
+              placeholder="Type text"
+            ></textarea>
+            <button>Submit Feedback</button>
+          </form>
+        </div>
+        <div>
+          <div class="card m-v-2">
+            <div class="fs-30 p-v-2">Report a Safety Emergency</div>
+            <div class="c-grey p-v-2">We are committed to the safety of everyone using Zomato.</div>
+            <button class="bg-0 c-red border-0 m-0 p-h-0">Report here</button>
+          </div>
+          <div class="card m-v-2">
+            <div class="fs-30 p-v-2">Issue with your live order?</div>
+          <div class="c-grey p-v-2">
+            Click on the 'Support' or 'Online ordering help' section in your app
+            to connect to our customer support team.
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
